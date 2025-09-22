@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты — Семестровая работа</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты | Мой очень крутой сайт</title>
+    <link rel="stylesheet" href="../style/styles.css" />
 </head>
 <body>
-  <div id="header">Хэдер</div>
+    <div class="page-container">
+        <header class="header">Хэдер</header>
 
-  <div id="menu">
-    <ul>
-      <li><a href="../index.html">Главная</a></li>
-      <li><a href="./news.html">Новости</a></li>
-      <li><a href="./practices.html">Практики</a></li>
-      <li><a href="./goods.html">Товары</a></li>
-      <li><a href="./contacts.html">Контакты</a></li>
-    </ul>
-  </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
 
-  <div id="content">
-    <h1>Контакты</h1>
+        <main class="content">
+            <h1 class="section-title">Контакты</h1>
 
-    <p><strong>E‑mail:</strong> <a href="mailto:выдуманная@почта.рф">выдуманная@почта.рф</a></p>
-    <p><strong>Адрес:</strong> г. Москва</p>
+            <article class="experience-card">
+                <p class="experience-desc">
+                    <strong>E-mail:</strong> <a href="mailto:совсемневыдуманная@почта.рф">совсемневыдуманная@почта.рф</a>
+                </p>
+            </article>
 
-    <p>
-      <a href="tel:+79990000000">
-        <button type="button">Лучше не звонить мне</button>
-      </a>
-    </p>
-  </div>
+            <article class="experience-card">
+                <p class="experience-desc">
+                    <strong>Адрес:</strong> г. Москва
+                </p>
+            </article>
 
-  <div id="footer">Футер</div>
+            <article class="experience-card" style="text-align:center;">
+                <a href="tel:+79990000000">
+                    <button type="button">Позвоните мне</button>
+                </a>
+            </article>
+        </main>
+
+        <footer class="footer">Футер</footer>
+    </div>
 </body>
 </html>

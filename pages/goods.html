@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Товары — Семестровая работа</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог товаров | Мой очень крутой сайт</title>
+    <link rel="stylesheet" href="../style/styles.css" />
+    <style>
+        .experience-card {
+            border-left: none !important;
+        }
+    </style>
 </head>
 <body>
-  <div id="header">Хэдер</div>
+    <div class="page-container">
+        <header class="header">Хэдер</header>
 
-  <div id="menu">
-    <ul>
-      <li><a href="../index.html">Главная</a></li>
-      <li><a href="./news.html">Новости</a></li>
-      <li><a href="./practices.html">Практики</a></li>
-      <li><a href="./goods.html">Товары</a></li>
-      <li><a href="./contacts.html">Контакты</a></li>
-    </ul>
-  </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
 
-  <div id="content">
-    <h1>Каталог товаров</h1>
+        <main class="content">
+            <h1 class="section-title">Наши товары</h1>
 
-    <div class="goods">
-      <div class="card">
-        <img src="../images/goods1.jpg" alt="Товар 1" width="180" height="120">
-        <div class="title">Mango trollface 23$$$$$$$$$$$$$$$$$$4</div>
-        <div class="price">1 990 ₽</div>
-      </div>
+            <<section class="goods" style="display:grid; grid-template-columns:repeat(3, 1fr); gap:30px;">
+                 <article class="experience-card">
+                     <img src="../images/goods1.jpg" alt="Товар 1" width="220" height="150" />
+                     <h2 class="experience-title">Товар 1</h2>
+                     <p class="experience-desc">Mango trollface 23$$$$$$$4</p>
+                     <p class="experience-desc" style="color:red; font-weight:bold;">1 990 ₽</p>
+                 </article>
 
-      <div class="card">
-        <img src="../images/goods2.jpg" alt="Товар 2" width="180" height="120">
-        <div class="title">Mango trollface 30$$$$</div>
-        <div class="price">2 490 ₽</div>
-      </div>
+                 <article class="experience-card">
+                     <img src="../images/goods2.jpg" alt="Товар 2" width="220" height="150" />
+                     <h2 class="experience-title">Товар 2</h2>
+                     <p class="experience-desc">Mango trollface 30$$$$</p>
+                     <p class="experience-desc" style="color:red; font-weight:bold;">2 490 ₽</p>
+                 </article>
 
-      <div class="card">
-        <img src="../images/goods3.jpg" alt="Товар 3" width="180" height="120">
-        <div class="title">Бомжфейс</div>
-        <div class="price">990 ₽</div>
-      </div>
+                 <article class="experience-card">
+                     <img src="../images/goods3.jpg" alt="Товар 3" width="150" height="150" />
+                     <h2 class="experience-title">Товар 3</h2>
+                     <p class="experience-desc">Бомжфейс</p>
+                     <p class="experience-desc" style="color:red; font-weight:bold;">990 ₽</p>
+                 </article>
+            </section>
+        </main>
+
+        <footer class="footer">Футер</footer>
     </div>
-  </div>
-
-  <div id="footer">Футер</div>
 </body>
 </html>
